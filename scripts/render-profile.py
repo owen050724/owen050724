@@ -10,10 +10,12 @@ from html import escape
 from pathlib import Path
 import json
 import unicodedata
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "assets" / "panels"
+OUT = ROOT / "assets"
 DATA = json.loads((ROOT / "profile.json").read_text(encoding="utf-8"))
+PANELS = {}
 INK, CARD, BORDER = "#151719", "#1b1f1d", "#353d32"
 WHITE, MUTED, LIME, GOLD = "#f4f1e8", "#b9c0b2", "#d6f77a", "#e7be76"
 FONT = "Arial, Helvetica, Apple SD Gothic Neo, Noto Sans KR, sans-serif"
@@ -73,7 +75,7 @@ class Drawing:
         return y
 
     def group(self, drawing, x, y):
-        self.parts.append(f'<g transform="translate({x} {y})">{"".join(drawing.parts)}</g>')
+        self.parts.append(f'<g data-card="true" transform="translate({x} {y})">{"".join(drawing.parts)}</g>')
 
 
 class Panel(Drawing):
@@ -109,7 +111,7 @@ class Panel(Drawing):
 <g font-family="{FONT}">{body}</g>
 </svg>
 '''
-        (OUT / f"{name}{'-mobile' if self.mobile else ''}.svg").write_text(svg, encoding="utf-8")
+        PANELS[f"{name}{'-mobile' if self.mobile else ''}"] = svg
 
 
 def grid(panel, blocks, columns=2, gap=24):
@@ -169,7 +171,7 @@ def content_alt(name):
         return " ".join([data["award"] + ".", data["paper"] + ".", data["korean"] + ".", data["summary"], "Authors: " + data["authors"] + ".", data["venue"] + ".", data["competition"] + ".", data["date"] + ". Conference proceedings and program book."])
     if name == "background":
         return " ".join([*[" · ".join(filter(None, (e["period"], e["school"], e["detail"]))) + "." for e in data["education"]], *[h["year"] + ": " + "; ".join(h["items"]) + "." for h in data["honors"]]])
-    return " ".join([data["purpose"] + ".", data["note"], data["email"]])
+    return " ".join([data["purpose"] + ".", data["note"], data["email"] + ".", *[s["label"] + ": " + s["url"] for s in data["social"]]])
 
 
 def render_about(mobile):
@@ -183,8 +185,10 @@ def render_about(mobile):
     for index, interest in enumerate(data["interests"]):
         x = p.pad + (index % columns) * (width + 16)
         y = p.y + (index // columns) * 110
-        p.rect(x, y, width, 94)
-        p.text(interest, x+18, y+20, 25 if mobile else 23, LIME, True, width-36)
+        tag = Drawing()
+        tag.rect(0, 0, width, 94)
+        tag.text(interest, 18, 20, 25 if mobile else 23, LIME, True, width-36)
+        p.group(tag,x,y)
     p.y += (2 if mobile else 1) * 110 + 20
     p.label("COMMUNITY")
     grid(p, [lambda width, r=r: block(r["detail"], r["label"], width, mobile) for r in data["roles"][1:]])
@@ -198,13 +202,17 @@ def render_research(mobile):
     cols = 2 if mobile else 4
     gap = 20
     width = (p.inner - gap*(cols-1))/cols
-    height = 236 if mobile else 226
+    height = max(117 + len(wrap(m["label"],width-44,24,True))*24*1.28 + 12
+                 + len(wrap(m["note"],width-44,21))*21*1.3 + 22
+                 for m in data["metrics"])
     for i, metric in enumerate(data["metrics"]):
         x, y = p.pad+(i%cols)*(width+gap), p.y+(i//cols)*(height+gap)
-        p.rect(x,y,width,height)
-        p.text(metric["value"],x+22,y+20,76,LIME,True)
-        yy = p.text(metric["label"],x+22,y+117,24,WHITE,True,width-44,1.28)+12
-        p.text(metric["note"],x+22,yy,21,MUTED,False,width-44,1.3)
+        card = Drawing()
+        card.rect(0,0,width,height)
+        card.text(metric["value"],22,20,76,LIME,True)
+        yy = card.text(metric["label"],22,117,24,WHITE,True,width-44,1.28)+12
+        card.text(metric["note"],22,yy,21,MUTED,False,width-44,1.3)
+        p.group(card,x,y)
     p.y += (2 if mobile else 1)*(height+gap)+12
     p.paragraph(data["note"],size=24,gap=0)
     p.finish("research")
@@ -234,9 +242,6 @@ def render_publication(mobile):
     for label, value in [("AUTHORS",data["authors"]),("VENUE",data["venue"]),("COMPETITION",data["competition"]),("CONFERENCE DATES",data["date"])]:
         p.label(label)
         p.paragraph(value,WHITE,gap=30)
-    p.rule(p.pad,p.y,p.width-p.pad)
-    p.y += 28
-    p.paragraph("Conference proceedings & program book ↗",GOLD,25,True,0)
     p.finish("publication")
 
 
@@ -268,56 +273,96 @@ def render_contact(mobile):
     p.paragraph(data["purpose"],WHITE,30,True,14)
     p.paragraph(data["note"],MUTED,gap=28)
     p.paragraph(data["email"],LIME,32 if mobile else 48,True,24)
-    p.paragraph("EMAIL ME ↗",LIME,23,True,0)
+    p.rule(p.pad,p.y,p.width-p.pad)
+    p.y += 30
+    for social in data["social"]:
+        handle = social["url"].removeprefix("https://").removeprefix("www.").rstrip("/")
+        p.label(social["label"].upper())
+        p.paragraph(handle,WHITE,26,gap=24)
     p.finish("contact")
 
 
-def render_button(name, label, mobile, secondary=False):
-    width = 240 if mobile else (360 if secondary else 560)
-    height = 98 if secondary else 104
-    size = (32 if secondary else 25) if mobile else (30 if secondary else 28)
-    d = Drawing()
-    d.rect(.5,.5,width-1,height-1,INK,12,BORDER)
-    available = width-(40 if mobile else 60)
-    lines = wrap(label, available, size, True)
-    text_height = size * (1 + 1.42 * (len(lines)-1))
-    d.text(label,20 if mobile else 30,(height-text_height)/2,size,LIME,True,available)
-    svg = f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title"><title id="title">{escape(label)}</title><g font-family="{FONT}">{"".join(d.parts)}</g></svg>\n'
-    (OUT/f'{name}{"-mobile" if mobile else ""}.svg').write_text(svg,encoding="utf-8")
+SECTIONS = ("about","research","method","published","coordinated","publication","background","contact")
+SVG_NS = "http://www.w3.org/2000/svg"
+ET.register_namespace("",SVG_NS)
 
 
-def picture(name, alt, width="100%"):
-    return f'''<picture>
-    <source media="(max-width: 600px)" srcset="./assets/panels/{name}-mobile.svg">
-    <img src="./assets/panels/{name}.svg" alt="{escape(alt,quote=True)}" width="{width}">
-  </picture>'''
+def full_alt():
+    return " ".join(DATA[name]["title"]+". "+content_alt(name) for name in SECTIONS)
+
+
+def compose(mobile):
+    """Merge the header and sections into one canvas, without card seams."""
+    width = 600 if mobile else 1200
+    scale = width / 1200
+    header = ET.parse(OUT/"profile-header.svg").getroot()
+    for child in list(header):
+        tag = child.tag.rsplit("}",1)[-1]
+        # One shared canvas supplies the background and outer border.
+        if tag in ("title","desc") or (tag=="rect" and float(child.get("width","0"))>1100):
+            header.remove(child)
+        elif tag=="polygon" and child.get("fill")==LIME:
+            points = child.get("points","").split()
+            if points and min(float(point.split(",")[0]) for point in points)>=736:
+                header.remove(child)
+    header.append(ET.Element(f"{{{SVG_NS}}}path",{
+        "class":"header-trace", "d":"M760 105H799L849 184L899 105H938L868 218V293H830V218Z",
+        "fill":"none", "stroke":LIME, "stroke-width":"3.2", "pathLength":"1000",
+        "stroke-dasharray":"110 890", "stroke-linejoin":"round",
+    }))
+    body = [f'<g id="profile-header" transform="scale({scale})">'+"".join(ET.tostring(child,encoding="unicode") for child in header)+"</g>"]
+    y = 420*scale
+    for name in SECTIONS:
+        part = ET.fromstring(PANELS[name+("-mobile" if mobile else "")])
+        # Reuse drawing content, replacing each panel's outer background.
+        group = next(child for child in part if child.tag.rsplit("}",1)[-1]=="g")
+        if name!="about":
+            pad = 32 if mobile else 60
+            body.append(f'<path d="M{pad} {y}H{width-pad}" stroke="{BORDER}"/>')
+        body.append(f'<g id="section-{name}" role="group" aria-label="{escape(DATA[name]["title"],quote=True)}" transform="translate(0 {y})">'+ET.tostring(group,encoding="unicode")+"</g>")
+        y += float(part.get("height"))-24
+    height = round(y+24)
+    content = "\n".join(body)
+    svg = f'''<svg xmlns="{SVG_NS}" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
+<title id="title">Yeonoh Park · 박연오 — Security Researcher</title>
+<desc id="desc">{escape(full_alt())}</desc>
+<defs><clipPath id="profile-canvas"><rect width="{width}" height="{height}" rx="20"/></clipPath></defs>
+<style>
+@keyframes trace {{ to {{ stroke-dashoffset: -1000; }} }}
+.header-trace {{ animation: trace 4.8s linear infinite; }}
+@media (prefers-reduced-motion: reduce) {{ .header-trace {{ animation: none; }} }}
+</style>
+<g clip-path="url(#profile-canvas)">
+<rect width="{width}" height="{height}" fill="{INK}"/>
+{content}
+</g>
+<rect x=".5" y=".5" width="{width-1}" height="{height-1}" rx="20" fill="none" stroke="{BORDER}"/>
+</svg>
+'''
+    (OUT/f'profile{"-mobile" if mobile else ""}.svg').write_text(svg,encoding="utf-8")
 
 
 def render_readme():
-    parts = ['''<!-- Generated from profile.json. To update: python3 scripts/render-profile.py -->
+    readme = f'''<!-- Generated from profile.json. To update: python3 scripts/render-profile.py -->
 
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/profile-header.svg">
-    <img src="./assets/profile-header.gif" alt="Yeonoh Park · 박연오 — Security Researcher, SeoulTech CIS Lab" width="100%">
+    <source media="(max-width: 600px)" srcset="./assets/profile-mobile.svg">
+    <img src="./assets/profile.svg" alt="{escape(full_alt(),quote=True)}" width="100%">
   </picture>
-</p>''']
-    for name in ("about","research","method","published","coordinated","publication","background","contact"):
-        graphic = picture(name,content_alt(name))
-        if name == "publication":
-            graphic = f'<a href="{DATA[name]["link"]}">\n  {graphic}\n</a>'
-        if name == "contact":
-            graphic = f'<a href="mailto:{DATA[name]["email"]}">\n  {graphic}\n</a>'
-        parts.append(f'<p align="center">\n  {graphic}\n</p>')
-        if name == "published":
-            links = []
-            for label,item in zip(("Jenkins advisory ↗","ToolJet CVE ↗"),DATA["published"]["items"]):
-                key = "link-"+item["project"].lower()
-                links.append(f'<a href="{item["link"]}">{picture(key,label,"49%")}</a>')
-            parts.append('<p align="center">\n  '+"\n  ".join(links)+'\n</p>')
-    links = [f'<a href="{social["url"]}">{picture("link-"+social["label"].lower(),social["label"],"32%")}</a>' for social in DATA["contact"]["social"]]
-    parts.append('<p align="center">\n  '+"\n  ".join(links)+'\n</p>')
-    (ROOT/"README.md").write_text("\n\n".join(parts)+"\n",encoding="utf-8")
+</p>
+
+<p align="center">
+  <a href="mailto:{DATA['contact']['email']}">Email</a> ·
+  {' · '.join(f'<a href="{s["url"]}">{s["label"]}</a>' for s in DATA['contact']['social'])}<br>
+  <sub>
+    <a href="{DATA['published']['items'][0]['link']}">Jenkins advisory</a> ·
+    <a href="{DATA['published']['items'][1]['link']}">ToolJet CVE</a> ·
+    <a href="{DATA['publication']['link']}">Conference proceedings</a>
+  </sub>
+</p>
+'''
+    (ROOT/"README.md").write_text(readme,encoding="utf-8")
 
 
 def main():
@@ -331,12 +376,9 @@ def main():
         render_publication(mobile)
         render_background(mobile)
         render_contact(mobile)
-        render_button("link-jenkins","Jenkins advisory ↗",mobile)
-        render_button("link-tooljet","ToolJet CVE ↗",mobile)
-        for social in DATA["contact"]["social"]:
-            render_button("link-"+social["label"].lower(),social["label"],mobile,True)
+        compose(mobile)
     render_readme()
-    print(f"Generated README.md and {len(list(OUT.glob('*.svg')))} SVG panels from profile.json.")
+    print("Generated README.md, assets/profile.svg, and assets/profile-mobile.svg from profile.json.")
 
 
 if __name__ == "__main__":

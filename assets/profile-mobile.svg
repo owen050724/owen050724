@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="11716" viewBox="0 0 600 11716" role="img" aria-labelledby="title desc">
+<title id="title">Yeonoh Park · 박연오 — Security Researcher</title>
+<desc id="desc">About the researcher. I&#x27;m Yeonoh Park (박연오), a Computer Engineering undergraduate at Seoul National University of Science and Technology (SeoulTech) and an undergraduate researcher at the Cryptography Information Security Laboratory. I study how identity, authority, and trust move across software boundaries, and whether software enforces the security boundaries it is intended to provide. Interests: Vulnerability research; System security; Cryptography; Computer systems. Cryptography Information Security Laboratory: Undergraduate Researcher. TCP · Computer Science and Information Technology Club: Leader. STCE · SeoulTech Crypto Engine: Member. Research in numbers. Authorization boundaries, tenant isolation, credential handling, workflow execution, plugins, and APIs across open-source projects and coordinated disclosure programs. 5 CVE identifiers (2 published · 3 reserved). 13 Vendor-confirmed (outcomes). 92 Submitted reports (Mar 22–Aug 13, 2026). 40 Products / workspaces (research coverage). The 92 reports were submitted from March 22 to August 13, 2026. The 13 vendor-confirmed outcomes include subsequent confirmations and publications. How I work. 1. Model the boundary. Identify the identities, capabilities, data domains, and trust transitions that define a system&#x27;s expected security properties. 2. Follow authority. Trace how identity and scope propagate between components, looking for changes in how authority is interpreted. 3. Check the evidence. Use bounded local validation and competing explanations to distinguish a boundary failure from expected behavior. 4. Coordinate disclosure. Separate technical impact from reportability, account for prior work, document limitations, and work with vendors on disclosure. Published findings. Jenkins. CVE-2026-84677 PUBLISHED. Stored XSS in update-center2, affecting 3.18.3 and earlier and fixed in 3.18.4. Published September 2, 2026 · Reporter credit. ToolJet. CVE-2026-82872 PUBLISHED. A vendor-accepted authorization boundary vulnerability. Advisory: August 7, 2026 · CVE: August 31, 2026 · Finder credit. Coordinated outcomes. Dify. CVE-2026-59210 RESERVED. Accepted; fix shipped since 1.16.0. CVE reserved; advisory publication pending. Apache DolphinScheduler. CVE-2026-57590, CVE-2026-66082 RESERVED. Two separately vendor-confirmed findings with reporter credit. Both CVEs are reserved; severity, remediation, and advisory details remain pending. Grafana.  ACCEPTED. CVE, remediation, and advisory coordination pending. ToolJet · separate report.  ACCEPTED. Accepted with reporter credit; CVE assignment, remediation, and advisory publication pending. authentik.  VALIDATED. Fix verification, CVE assignment, advisory publication, and public attribution pending. Five additional outcomes.  COORDINATED. Accepted or otherwise confirmed by their vendors. Product identities and technical details remain private during coordinated disclosure. Publication. Gold Prize. Analysis of Privilege Transfer Vulnerabilities in Messenger-Based Local AI Agents. 메신저 기반 로컬 AI 에이전트의 권한 전이 취약점 분석. This work examines privilege transfer and authorization boundaries in messenger-based local AI agents. Authors: 박연오 · 최도현 · 김역 · 이창훈 · 손기욱†. 2026 Summer Conference of the Korea Digital Contents Society. Undergraduate Paper Competition. July 1–3, 2026. Conference proceedings and program book. Education &amp; honors. 2024–present · Seoul National University of Science and Technology · B.S. in Computer Engineering · In progress. 2021–2024 · Busan Science High School. 2026: Gold Prize · Korea Digital Contents Society Undergraduate Paper Competition (the paper above). 2024: 12th K-Hackathon finalist; MATLAB Student AI Contest finalist. 2023: Busan SW/AI Education Hackathon Grand Prize; Busan Science Exhibition Encouragement Prize. 2022: Busan Future Scientist Award Grand Prize; National High School Club SW/AI Contest Encouragement Prize; Busan Science Exhibition Encouragement Prize. Let&#x27;s connect. Research collaboration &amp; security inquiries. Email is the best way to reach me. 24101209@seoultech.ac.kr. LinkedIn: https://www.linkedin.com/in/yeonohpark/ Discord: https://discord.com/users/495616210835079178 Instagram: https://www.instagram.com/dus_oh24/</desc>
+<defs><clipPath id="profile-canvas"><rect width="600" height="11716" rx="20"/></clipPath></defs>
+<style>
+@keyframes trace { to { stroke-dashoffset: -1000; } }
+.header-trace { animation: trace 4.8s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .header-trace { animation: none; } }
+</style>
+<g clip-path="url(#profile-canvas)">
+<rect width="600" height="11716" fill="#151719"/>
+<g id="profile-header" transform="scale(0.5)"><path xmlns="http://www.w3.org/2000/svg" d="M690 1H1180Q1199 1 1199 20V400Q1199 419 1180 419H612Z" fill="#191c1d" />
+  <rect xmlns="http://www.w3.org/2000/svg" x="60" y="46" width="9" height="9" fill="#d6f77a" />
+  <text xmlns="http://www.w3.org/2000/svg" x="84" y="56" fill="#d5d8cd" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="1.1">SECURITY RESEARCHER</text>
+  <g xmlns="http://www.w3.org/2000/svg" fill="#f4f1e8" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="114" font-weight="900">
+    <text x="55" y="173">YEONOH</text>
+    <text x="55" y="280" fill="#d6f77a">PARK</text>
+  </g>
+  <polygon xmlns="http://www.w3.org/2000/svg" points="451.00,261.50 515.00,261.50 515.00,258.50 451.00,258.50" fill="#d6f77a" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="516.06,258.94 503.06,245.94 500.94,248.06 513.94,261.06" fill="#d6f77a" />
+  <polygon xmlns="http://www.w3.org/2000/svg" points="513.94,258.94 500.94,271.94 503.06,274.06 516.06,261.06" fill="#d6f77a" />
+  <text xmlns="http://www.w3.org/2000/svg" x="61" y="323" fill="#adb3a7" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="0.2">VULNERABILITY RESEARCH / SYSTEM SECURITY</text>
+  <polygon xmlns="http://www.w3.org/2000/svg" points="779.00,87.50 818.00,87.50 818.00,86.50 779.00,86.50" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="817.58,87.27 867.58,166.27 868.42,165.73 818.42,86.73" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="868.42,166.27 918.42,87.27 917.58,86.73 867.58,165.73" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="918.00,87.50 957.00,87.50 957.00,86.50 918.00,86.50" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="956.57,86.74 886.57,199.74 887.43,200.26 957.43,87.26" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="886.50,200.00 886.50,275.00 887.50,275.00 887.50,200.00" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="887.00,274.50 849.00,274.50 849.00,275.50 887.00,275.50" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="849.50,275.00 849.50,200.00 848.50,200.00 848.50,275.00" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="849.43,199.74 779.43,86.74 778.57,87.26 848.57,200.26" fill="#363e31" /><polygon xmlns="http://www.w3.org/2000/svg" points="983.00,87.50 1082.00,87.50 1082.00,86.50 983.00,86.50" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1081.65,87.36 1120.65,125.36 1121.35,124.64 1082.35,86.64" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1120.50,125.00 1120.50,173.00 1121.50,173.00 1121.50,125.00" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1120.65,172.64 1081.65,210.64 1082.35,211.36 1121.35,173.36" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1082.00,210.50 1021.00,210.50 1021.00,211.50 1082.00,211.50" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1020.50,211.00 1020.50,275.00 1021.50,275.00 1021.50,211.00" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1021.00,274.50 983.00,274.50 983.00,275.50 1021.00,275.50" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="983.50,275.00 983.50,87.00 982.50,87.00 982.50,275.00" fill="#363e31" /><polygon xmlns="http://www.w3.org/2000/svg" points="1021.00,123.50 1066.00,123.50 1066.00,122.50 1021.00,122.50" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1065.66,123.36 1082.66,139.36 1083.34,138.64 1066.34,122.64" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1082.50,139.00 1082.50,159.00 1083.50,159.00 1083.50,139.00" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1082.66,158.64 1065.66,174.64 1066.34,175.36 1083.34,159.36" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1066.00,174.50 1021.00,174.50 1021.00,175.50 1066.00,175.50" fill="#363e31" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1021.50,175.00 1021.50,123.00 1020.50,123.00 1020.50,175.00" fill="#363e31" />
+  <polygon xmlns="http://www.w3.org/2000/svg" points="760.34,105.36 779.34,87.36 778.66,86.64 759.66,104.64" fill="#363e31" /><polygon xmlns="http://www.w3.org/2000/svg" points="799.34,105.36 818.34,87.36 817.66,86.64 798.66,104.64" fill="#363e31" /><polygon xmlns="http://www.w3.org/2000/svg" points="899.34,105.36 918.34,87.36 917.66,86.64 898.66,104.64" fill="#363e31" /><polygon xmlns="http://www.w3.org/2000/svg" points="938.34,105.36 957.34,87.36 956.66,86.64 937.66,104.64" fill="#363e31" /><polygon xmlns="http://www.w3.org/2000/svg" points="868.34,293.36 887.34,275.36 886.66,274.64 867.66,292.64" fill="#363e31" /><polygon xmlns="http://www.w3.org/2000/svg" points="964.34,105.36 983.34,87.36 982.66,86.64 963.66,104.64" fill="#363e31" /><polygon xmlns="http://www.w3.org/2000/svg" points="1063.34,105.36 1082.34,87.36 1081.66,86.64 1062.66,104.64" fill="#363e31" /><polygon xmlns="http://www.w3.org/2000/svg" points="1102.34,143.36 1121.34,125.36 1120.66,124.64 1101.66,142.64" fill="#363e31" /><polygon xmlns="http://www.w3.org/2000/svg" points="1102.34,191.36 1121.34,173.36 1120.66,172.64 1101.66,190.64" fill="#363e31" /><polygon xmlns="http://www.w3.org/2000/svg" points="1002.34,293.36 1021.34,275.36 1020.66,274.64 1001.66,292.64" fill="#363e31" />
+  <polygon xmlns="http://www.w3.org/2000/svg" points="760.00,105.00 799.00,105.00 849.00,184.00 899.00,105.00 938.00,105.00 868.00,218.00 868.00,293.00 830.00,293.00 830.00,218.00 760.00,105.00" fill="#242b20" />
+  <polygon xmlns="http://www.w3.org/2000/svg" points="964.00,105.00 1063.00,105.00 1102.00,143.00 1102.00,191.00 1063.00,229.00 1002.00,229.00 1002.00,293.00 964.00,293.00 964.00,105.00" fill="#202423" />
+  <polygon xmlns="http://www.w3.org/2000/svg" points="1002.00,141.00 1047.00,141.00 1064.00,157.00 1064.00,177.00 1047.00,193.00 1002.00,193.00 1002.00,141.00" fill="#191c1d" />
+  <polygon xmlns="http://www.w3.org/2000/svg" points="760.00,105.60 799.00,105.60 799.00,104.40 760.00,104.40" fill="#788b4e" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="798.49,105.32 848.49,184.32 849.51,183.68 799.51,104.68" fill="#788b4e" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="849.51,184.32 899.51,105.32 898.49,104.68 848.49,183.68" fill="#788b4e" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="899.00,105.60 938.00,105.60 938.00,104.40 899.00,104.40" fill="#788b4e" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="937.49,104.68 867.49,217.68 868.51,218.32 938.51,105.32" fill="#788b4e" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="867.40,218.00 867.40,293.00 868.60,293.00 868.60,218.00" fill="#788b4e" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="868.00,292.40 830.00,292.40 830.00,293.60 868.00,293.60" fill="#788b4e" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="830.60,293.00 830.60,218.00 829.40,218.00 829.40,293.00" fill="#788b4e" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="830.51,217.68 760.51,104.68 759.49,105.32 829.49,218.32" fill="#788b4e" />
+  <polygon xmlns="http://www.w3.org/2000/svg" points="964.00,105.60 1063.00,105.60 1063.00,104.40 964.00,104.40" fill="#747b6a" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1062.58,105.43 1101.58,143.43 1102.42,142.57 1063.42,104.57" fill="#747b6a" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1101.40,143.00 1101.40,191.00 1102.60,191.00 1102.60,143.00" fill="#747b6a" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1101.58,190.57 1062.58,228.57 1063.42,229.43 1102.42,191.43" fill="#747b6a" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1063.00,228.40 1002.00,228.40 1002.00,229.60 1063.00,229.60" fill="#747b6a" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1001.40,229.00 1001.40,293.00 1002.60,293.00 1002.60,229.00" fill="#747b6a" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1002.00,292.40 964.00,292.40 964.00,293.60 1002.00,293.60" fill="#747b6a" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="964.60,293.00 964.60,105.00 963.40,105.00 963.40,293.00" fill="#747b6a" />
+  <polygon xmlns="http://www.w3.org/2000/svg" points="1002.00,141.60 1047.00,141.60 1047.00,140.40 1002.00,140.40" fill="#747b6a" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1046.59,141.44 1063.59,157.44 1064.41,156.56 1047.41,140.56" fill="#747b6a" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1063.40,157.00 1063.40,177.00 1064.60,177.00 1064.60,157.00" fill="#747b6a" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1063.59,176.56 1046.59,192.56 1047.41,193.44 1064.41,177.44" fill="#747b6a" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1047.00,192.40 1002.00,192.40 1002.00,193.60 1047.00,193.60" fill="#747b6a" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1002.60,193.00 1002.60,141.00 1001.40,141.00 1001.40,193.00" fill="#747b6a" />
+  <polygon xmlns="http://www.w3.org/2000/svg" points="736.50,120.00 736.50,82.00 735.50,82.00 735.50,120.00" fill="#464f3d" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="736.00,82.50 774.00,82.50 774.00,81.50 736.00,81.50" fill="#464f3d" />
+  <polygon xmlns="http://www.w3.org/2000/svg" points="1127.50,272.00 1127.50,310.00 1128.50,310.00 1128.50,272.00" fill="#464f3d" />
+<polygon xmlns="http://www.w3.org/2000/svg" points="1128.00,309.50 1090.00,309.50 1090.00,310.50 1128.00,310.50" fill="#464f3d" />
+  <text xmlns="http://www.w3.org/2000/svg" x="744" y="339" fill="#88917f" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="0.3">IDENTITY. AUTHORITY. TRUST.</text>
+  <rect xmlns="http://www.w3.org/2000/svg" x="60" y="363" width="1080" height="1" fill="#373c35" />
+  <text xmlns="http://www.w3.org/2000/svg" x="61" y="392" fill="#b4baad" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="0.5">SEOULTECH / CIS LAB</text>
+  <text xmlns="http://www.w3.org/2000/svg" x="1140" y="392" text-anchor="end" fill="#d6f77a" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="0.7">OWEN050724</text>
+<path xmlns="http://www.w3.org/2000/svg" class="header-trace" d="M760 105H799L849 184L899 105H938L868 218V293H830V218Z" fill="none" stroke="#d6f77a" stroke-width="3.2" pathLength="1000" stroke-dasharray="110 890" stroke-linejoin="round" /></g>
+<g id="section-about" role="group" aria-label="About the researcher" transform="translate(0 210.0)"><g xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, Apple SD Gothic Neo, Noto Sans KR, sans-serif"><text x="32" y="51.96" font-size="19" fill="#d6f77a" font-weight="700">01 / YEONOH PARK</text>
+<rect x="558" y="40" width="10" height="10" rx="0" fill="#d6f77a" />
+<text x="32" y="115.28" font-size="42" fill="#f4f1e8" font-weight="700" data-max-width="536">About the researcher</text>
+<path d="M32 151.64H568" fill="none" stroke="#353d32" />
+<text x="32" y="207.16" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">I'm Yeonoh Park (박연오), a Computer</text>
+<text x="32" y="246.92" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">Engineering undergraduate at Seoul</text>
+<text x="32" y="286.68" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">National University of Science and</text>
+<text x="32" y="326.44" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">Technology (SeoulTech) and an</text>
+<text x="32" y="366.20" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">undergraduate researcher at the</text>
+<text x="32" y="405.96" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">Cryptography Information Security</text>
+<text x="32" y="445.72" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">Laboratory.</text>
+<text x="32" y="509.48" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">I study how identity, authority, and</text>
+<text x="32" y="549.24" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">trust move across software</text>
+<text x="32" y="589.00" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">boundaries, and whether software</text>
+<text x="32" y="628.76" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">enforces the security boundaries it</text>
+<text x="32" y="668.52" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">is intended to provide.</text>
+<text x="32" y="727.24" font-size="22" fill="#d6f77a" font-weight="700" data-max-width="536">RESEARCH INTERESTS</text>
+<g data-card="true" transform="translate(32.0 759.9999999999999)"><rect x="0" y="0" width="260.0" height="94" rx="12" fill="#1b1f1d" /><text x="18" y="41.00" font-size="25" fill="#d6f77a" font-weight="700" data-max-width="224.0">Vulnerability</text><text x="18" y="76.50" font-size="25" fill="#d6f77a" font-weight="700" data-max-width="224.0">research</text></g>
+<g data-card="true" transform="translate(308.0 759.9999999999999)"><rect x="0" y="0" width="260.0" height="94" rx="12" fill="#1b1f1d" /><text x="18" y="41.00" font-size="25" fill="#d6f77a" font-weight="700" data-max-width="224.0">System security</text></g>
+<g data-card="true" transform="translate(32.0 869.9999999999999)"><rect x="0" y="0" width="260.0" height="94" rx="12" fill="#1b1f1d" /><text x="18" y="41.00" font-size="25" fill="#d6f77a" font-weight="700" data-max-width="224.0">Cryptography</text></g>
+<g data-card="true" transform="translate(308.0 869.9999999999999)"><rect x="0" y="0" width="260.0" height="94" rx="12" fill="#1b1f1d" /><text x="18" y="41.00" font-size="25" fill="#d6f77a" font-weight="700" data-max-width="224.0">Computer</text><text x="18" y="76.50" font-size="25" fill="#d6f77a" font-weight="700" data-max-width="224.0">systems</text></g>
+<text x="32" y="1018.48" font-size="22" fill="#d6f77a" font-weight="700" data-max-width="536">COMMUNITY</text>
+<g data-card="true" transform="translate(32.0 1051.2399999999998)"><rect width="536.0" height="183.28" rx="12" fill="#1b1f1d" stroke="#353d32" /><text x="26" y="51.20" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="484.0">Leader</text><text x="26" y="103.28" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">TCP · Computer Science and</text><text x="26" y="141.62" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">Information Technology Club</text></g>
+<g data-card="true" transform="translate(32.0 1258.5199999999998)"><rect width="536.0" height="144.94" rx="12" fill="#1b1f1d" stroke="#353d32" /><text x="26" y="51.20" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="484.0">Member</text><text x="26" y="103.28" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">STCE · SeoulTech Crypto Engine</text></g></g>
+</g>
+<path d="M32 1645.0H568" stroke="#353d32"/>
+<g id="section-research" role="group" aria-label="Research in numbers" transform="translate(0 1645.0)"><g xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, Apple SD Gothic Neo, Noto Sans KR, sans-serif"><text x="32" y="51.96" font-size="19" fill="#d6f77a" font-weight="700">02 / YEONOH PARK</text>
+<rect x="558" y="40" width="10" height="10" rx="0" fill="#d6f77a" />
+<text x="32" y="115.28" font-size="42" fill="#f4f1e8" font-weight="700" data-max-width="536">Research in numbers</text>
+<path d="M32 151.64H568" fill="none" stroke="#353d32" />
+<text x="32" y="207.16" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">Authorization boundaries, tenant</text>
+<text x="32" y="246.92" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">isolation, credential handling,</text>
+<text x="32" y="286.68" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">workflow execution, plugins, and APIs</text>
+<text x="32" y="326.44" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">across open-source projects and</text>
+<text x="32" y="366.20" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">coordinated disclosure programs.</text>
+<g data-card="true" transform="translate(32.0 406.43999999999994)"><rect x="0" y="0" width="258.0" height="267.03999999999996" rx="12" fill="#1b1f1d" /><text x="22" y="83.84" font-size="76" fill="#d6f77a" font-weight="700">5</text><text x="22" y="137.16" font-size="24" fill="#f4f1e8" font-weight="700" data-max-width="214.0">CVE identifiers</text><text x="22" y="177.36" font-size="21" fill="#b9c0b2" font-weight="400" data-max-width="214.0">2 published · 3</text><text x="22" y="204.66" font-size="21" fill="#b9c0b2" font-weight="400" data-max-width="214.0">reserved</text></g>
+<g data-card="true" transform="translate(310.0 406.43999999999994)"><rect x="0" y="0" width="258.0" height="267.03999999999996" rx="12" fill="#1b1f1d" /><text x="22" y="83.84" font-size="76" fill="#d6f77a" font-weight="700">13</text><text x="22" y="137.16" font-size="24" fill="#f4f1e8" font-weight="700" data-max-width="214.0">Vendor-confirmed</text><text x="22" y="177.36" font-size="21" fill="#b9c0b2" font-weight="400" data-max-width="214.0">outcomes</text></g>
+<g data-card="true" transform="translate(32.0 693.4799999999999)"><rect x="0" y="0" width="258.0" height="267.03999999999996" rx="12" fill="#1b1f1d" /><text x="22" y="83.84" font-size="76" fill="#d6f77a" font-weight="700">92</text><text x="22" y="137.16" font-size="24" fill="#f4f1e8" font-weight="700" data-max-width="214.0">Submitted</text><text x="22" y="167.88" font-size="24" fill="#f4f1e8" font-weight="700" data-max-width="214.0">reports</text><text x="22" y="208.08" font-size="21" fill="#b9c0b2" font-weight="400" data-max-width="214.0">Mar 22–Aug 13,</text><text x="22" y="235.38" font-size="21" fill="#b9c0b2" font-weight="400" data-max-width="214.0">2026</text></g>
+<g data-card="true" transform="translate(310.0 693.4799999999999)"><rect x="0" y="0" width="258.0" height="267.03999999999996" rx="12" fill="#1b1f1d" /><text x="22" y="83.84" font-size="76" fill="#d6f77a" font-weight="700">40</text><text x="22" y="137.16" font-size="24" fill="#f4f1e8" font-weight="700" data-max-width="214.0">Products /</text><text x="22" y="167.88" font-size="24" fill="#f4f1e8" font-weight="700" data-max-width="214.0">workspaces</text><text x="22" y="208.08" font-size="21" fill="#b9c0b2" font-weight="400" data-max-width="214.0">research coverage</text></g>
+<text x="32" y="1012.68" font-size="24" fill="#b9c0b2" font-weight="400" data-max-width="536">The 92 reports were submitted from March</text>
+<text x="32" y="1046.76" font-size="24" fill="#b9c0b2" font-weight="400" data-max-width="536">22 to August 13, 2026. The 13</text>
+<text x="32" y="1080.84" font-size="24" fill="#b9c0b2" font-weight="400" data-max-width="536">vendor-confirmed outcomes include</text>
+<text x="32" y="1114.92" font-size="24" fill="#b9c0b2" font-weight="400" data-max-width="536">subsequent confirmations and publications.</text></g>
+</g>
+<path d="M32 2782.0H568" stroke="#353d32"/>
+<g id="section-method" role="group" aria-label="How I work" transform="translate(0 2782.0)"><g xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, Apple SD Gothic Neo, Noto Sans KR, sans-serif"><text x="32" y="51.96" font-size="19" fill="#d6f77a" font-weight="700">03 / YEONOH PARK</text>
+<rect x="558" y="40" width="10" height="10" rx="0" fill="#d6f77a" />
+<text x="32" y="115.28" font-size="42" fill="#f4f1e8" font-weight="700" data-max-width="536">How I work</text>
+<path d="M32 151.64H568" fill="none" stroke="#353d32" />
+<g data-card="true" transform="translate(32.0 183.64)"><rect width="536.0" height="336.43999999999994" rx="12" fill="#1b1f1d" stroke="#353d32" /><text x="26" y="62.96" font-size="44" fill="#d6f77a" font-weight="700">01</text><text x="26" y="127.68" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="484.0">Model the boundary</text><text x="26" y="179.76" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">Identify the identities, capabilities,</text><text x="26" y="218.10" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">data domains, and trust</text><text x="26" y="256.44" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">transitions that define a system's</text><text x="26" y="294.78" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">expected security properties.</text></g>
+<g data-card="true" transform="translate(32.0 544.0799999999999)"><rect width="536.0" height="336.43999999999994" rx="12" fill="#1b1f1d" stroke="#353d32" /><text x="26" y="62.96" font-size="44" fill="#d6f77a" font-weight="700">02</text><text x="26" y="127.68" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="484.0">Follow authority</text><text x="26" y="179.76" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">Trace how identity and scope</text><text x="26" y="218.10" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">propagate between components,</text><text x="26" y="256.44" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">looking for changes in how</text><text x="26" y="294.78" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">authority is interpreted.</text></g>
+<g data-card="true" transform="translate(32.0 904.5199999999999)"><rect width="536.0" height="336.43999999999994" rx="12" fill="#1b1f1d" stroke="#353d32" /><text x="26" y="62.96" font-size="44" fill="#d6f77a" font-weight="700">03</text><text x="26" y="127.68" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="484.0">Check the evidence</text><text x="26" y="179.76" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">Use bounded local validation and</text><text x="26" y="218.10" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">competing explanations to</text><text x="26" y="256.44" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">distinguish a boundary failure from</text><text x="26" y="294.78" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">expected behavior.</text></g>
+<g data-card="true" transform="translate(32.0 1264.9599999999998)"><rect width="536.0" height="336.43999999999994" rx="12" fill="#1b1f1d" stroke="#353d32" /><text x="26" y="62.96" font-size="44" fill="#d6f77a" font-weight="700">04</text><text x="26" y="127.68" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="484.0">Coordinate disclosure</text><text x="26" y="179.76" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">Separate technical impact from</text><text x="26" y="218.10" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">reportability, account for prior</text><text x="26" y="256.44" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">work, document limitations, and</text><text x="26" y="294.78" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">work with vendors on disclosure.</text></g></g>
+</g>
+<path d="M32 4415.0H568" stroke="#353d32"/>
+<g id="section-published" role="group" aria-label="Published findings" transform="translate(0 4415.0)"><g xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, Apple SD Gothic Neo, Noto Sans KR, sans-serif"><text x="32" y="51.96" font-size="19" fill="#d6f77a" font-weight="700">04 / YEONOH PARK</text>
+<rect x="558" y="40" width="10" height="10" rx="0" fill="#d6f77a" />
+<text x="32" y="115.28" font-size="42" fill="#f4f1e8" font-weight="700" data-max-width="536">Published findings</text>
+<path d="M32 151.64H568" fill="none" stroke="#353d32" />
+<g data-card="true" transform="translate(32.0 183.64)"><rect width="536.0" height="415.35999999999996" rx="12" fill="#1b1f1d" stroke="#353d32" /><text x="28" y="42.80" font-size="20" fill="#d6f77a" font-weight="700">PUBLISHED</text><text x="28" y="98.96" font-size="34" fill="#f4f1e8" font-weight="700" data-max-width="480.0">Jenkins</text><text x="28" y="153.68" font-size="25" fill="#d6f77a" font-weight="700" data-max-width="480.0">CVE-2026-84677</text><text x="28" y="208.86" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">Stored XSS in update-center2,</text><text x="28" y="247.20" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">affecting 3.18.3 and earlier and</text><text x="28" y="285.54" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">fixed in 3.18.4.</text><text x="28" y="339.36" font-size="24" fill="#b9c0b2" font-weight="400" data-max-width="480.0">Published September 2, 2026 ·</text><text x="28" y="373.44" font-size="24" fill="#b9c0b2" font-weight="400" data-max-width="480.0">Reporter credit</text></g>
+<g data-card="true" transform="translate(32.0 623.0)"><rect width="536.0" height="377.02" rx="12" fill="#1b1f1d" stroke="#353d32" /><text x="28" y="42.80" font-size="20" fill="#d6f77a" font-weight="700">PUBLISHED</text><text x="28" y="98.96" font-size="34" fill="#f4f1e8" font-weight="700" data-max-width="480.0">ToolJet</text><text x="28" y="153.68" font-size="25" fill="#d6f77a" font-weight="700" data-max-width="480.0">CVE-2026-82872</text><text x="28" y="208.86" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">A vendor-accepted authorization</text><text x="28" y="247.20" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">boundary vulnerability.</text><text x="28" y="301.02" font-size="24" fill="#b9c0b2" font-weight="400" data-max-width="480.0">Advisory: August 7, 2026 · CVE: August</text><text x="28" y="335.10" font-size="24" fill="#b9c0b2" font-weight="400" data-max-width="480.0">31, 2026 · Finder credit</text></g></g>
+</g>
+<path d="M32 5447.0H568" stroke="#353d32"/>
+<g id="section-coordinated" role="group" aria-label="Coordinated outcomes" transform="translate(0 5447.0)"><g xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, Apple SD Gothic Neo, Noto Sans KR, sans-serif"><text x="32" y="51.96" font-size="19" fill="#d6f77a" font-weight="700">05 / YEONOH PARK</text>
+<rect x="558" y="40" width="10" height="10" rx="0" fill="#d6f77a" />
+<text x="32" y="115.28" font-size="42" fill="#f4f1e8" font-weight="700" data-max-width="536">Coordinated outcomes</text>
+<path d="M32 151.64H568" fill="none" stroke="#353d32" />
+<g data-card="true" transform="translate(32.0 183.64)"><rect width="536.0" height="335.2" rx="12" fill="#1b1f1d" stroke="#353d32" /><text x="28" y="42.80" font-size="20" fill="#e7be76" font-weight="700">RESERVED</text><text x="28" y="98.96" font-size="34" fill="#f4f1e8" font-weight="700" data-max-width="480.0">Dify</text><text x="28" y="153.68" font-size="25" fill="#e7be76" font-weight="700" data-max-width="480.0">CVE-2026-59210</text><text x="28" y="208.86" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">Accepted; fix shipped since 1.16.0.</text><text x="28" y="247.20" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">CVE reserved; advisory publication</text><text x="28" y="285.54" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">pending.</text></g>
+<g data-card="true" transform="translate(32.0 542.8399999999999)"><rect width="536.0" height="451.3799999999999" rx="12" fill="#1b1f1d" stroke="#353d32" /><text x="28" y="42.80" font-size="20" fill="#e7be76" font-weight="700">RESERVED</text><text x="28" y="98.96" font-size="34" fill="#f4f1e8" font-weight="700" data-max-width="480.0">Apache DolphinScheduler</text><text x="28" y="153.68" font-size="25" fill="#e7be76" font-weight="700" data-max-width="480.0">CVE-2026-57590</text><text x="28" y="193.18" font-size="25" fill="#e7be76" font-weight="700" data-max-width="480.0">CVE-2026-66082</text><text x="28" y="248.36" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">Two separately vendor-confirmed</text><text x="28" y="286.70" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">findings with reporter credit.</text><text x="28" y="325.04" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">Both CVEs are reserved; severity,</text><text x="28" y="363.38" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">remediation, and advisory details</text><text x="28" y="401.72" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">remain pending.</text></g>
+<g data-card="true" transform="translate(32.0 1018.2199999999998)"><rect width="536.0" height="243.36" rx="12" fill="#1b1f1d" stroke="#353d32" /><text x="28" y="42.80" font-size="20" fill="#e7be76" font-weight="700">ACCEPTED</text><text x="28" y="98.96" font-size="34" fill="#f4f1e8" font-weight="700" data-max-width="480.0">Grafana</text><text x="28" y="155.36" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">CVE, remediation, and advisory</text><text x="28" y="193.70" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">coordination pending.</text></g>
+<g data-card="true" transform="translate(32.0 1285.58)"><rect width="536.0" height="281.70000000000005" rx="12" fill="#1b1f1d" stroke="#353d32" /><text x="28" y="42.80" font-size="20" fill="#e7be76" font-weight="700">ACCEPTED</text><text x="28" y="98.96" font-size="34" fill="#f4f1e8" font-weight="700" data-max-width="480.0">ToolJet · separate report</text><text x="28" y="155.36" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">Accepted with reporter credit;</text><text x="28" y="193.70" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">CVE assignment, remediation, and</text><text x="28" y="232.04" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">advisory publication pending.</text></g>
+<g data-card="true" transform="translate(32.0 1591.28)"><rect width="536.0" height="281.70000000000005" rx="12" fill="#1b1f1d" stroke="#353d32" /><text x="28" y="42.80" font-size="20" fill="#e7be76" font-weight="700">VALIDATED</text><text x="28" y="98.96" font-size="34" fill="#f4f1e8" font-weight="700" data-max-width="480.0">authentik</text><text x="28" y="155.36" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">Fix verification, CVE assignment,</text><text x="28" y="193.70" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">advisory publication, and public</text><text x="28" y="232.04" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">attribution pending.</text></g>
+<g data-card="true" transform="translate(32.0 1896.98)"><rect width="536.0" height="358.38" rx="12" fill="#1b1f1d" stroke="#353d32" /><text x="28" y="42.80" font-size="20" fill="#e7be76" font-weight="700">COORDINATED</text><text x="28" y="98.96" font-size="34" fill="#f4f1e8" font-weight="700" data-max-width="480.0">Five additional outcomes</text><text x="28" y="155.36" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">Accepted or otherwise confirmed</text><text x="28" y="193.70" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">by their vendors. Product</text><text x="28" y="232.04" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">identities and technical details</text><text x="28" y="270.38" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">remain private during coordinated</text><text x="28" y="308.72" font-size="27" fill="#f4f1e8" font-weight="400" data-max-width="480.0">disclosure.</text></g></g>
+</g>
+<path d="M32 7734.0H568" stroke="#353d32"/>
+<g id="section-publication" role="group" aria-label="Publication" transform="translate(0 7734.0)"><g xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, Apple SD Gothic Neo, Noto Sans KR, sans-serif"><text x="32" y="51.96" font-size="19" fill="#e7be76" font-weight="700">06 / YEONOH PARK</text>
+<rect x="558" y="40" width="10" height="10" rx="0" fill="#e7be76" />
+<text x="32" y="115.28" font-size="42" fill="#f4f1e8" font-weight="700" data-max-width="536">Publication</text>
+<path d="M32 151.64H568" fill="none" stroke="#353d32" />
+<text x="32" y="234.04" font-size="60" fill="#e7be76" font-weight="700" data-max-width="536">GOLD PRIZE</text>
+<text x="32" y="315.08" font-size="36" fill="#f4f1e8" font-weight="700" data-max-width="536">Analysis of Privilege</text>
+<text x="32" y="366.20" font-size="36" fill="#f4f1e8" font-weight="700" data-max-width="536">Transfer Vulnerabilities in</text>
+<text x="32" y="417.32" font-size="36" fill="#f4f1e8" font-weight="700" data-max-width="536">Messenger-Based Local AI</text>
+<text x="32" y="468.44" font-size="36" fill="#f4f1e8" font-weight="700" data-max-width="536">Agents</text>
+<text x="32" y="535.16" font-size="26" fill="#b9c0b2" font-weight="400" data-max-width="536">메신저 기반 로컬 AI 에이전트의 권한 전이</text>
+<text x="32" y="572.08" font-size="26" fill="#b9c0b2" font-weight="400" data-max-width="536">취약점 분석</text>
+<text x="32" y="640.68" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">This work examines privilege</text>
+<text x="32" y="680.44" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">transfer and authorization</text>
+<text x="32" y="720.20" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">boundaries in messenger-based local</text>
+<text x="32" y="759.96" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">AI agents.</text>
+<path d="M32 800.1999999999998H568" fill="none" stroke="#353d32" />
+<text x="32" y="848.68" font-size="22" fill="#e7be76" font-weight="700" data-max-width="536">AUTHORS</text>
+<text x="32" y="904.96" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">박연오 · 최도현 · 김역 · 이창훈 ·</text>
+<text x="32" y="944.72" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">손기욱†</text>
+<text x="32" y="1009.44" font-size="22" fill="#e7be76" font-weight="700" data-max-width="536">VENUE</text>
+<text x="32" y="1065.72" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">2026 Summer Conference of the</text>
+<text x="32" y="1105.48" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">Korea Digital Contents Society</text>
+<text x="32" y="1170.20" font-size="22" fill="#e7be76" font-weight="700" data-max-width="536">COMPETITION</text>
+<text x="32" y="1226.48" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">Undergraduate Paper Competition</text>
+<text x="32" y="1291.20" font-size="22" fill="#e7be76" font-weight="700" data-max-width="536">CONFERENCE DATES</text>
+<text x="32" y="1347.48" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">July 1–3, 2026</text></g>
+</g>
+<path d="M32 9136.0H568" stroke="#353d32"/>
+<g id="section-background" role="group" aria-label="Education &amp; honors" transform="translate(0 9136.0)"><g xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, Apple SD Gothic Neo, Noto Sans KR, sans-serif"><text x="32" y="51.96" font-size="19" fill="#d6f77a" font-weight="700">07 / YEONOH PARK</text>
+<rect x="558" y="40" width="10" height="10" rx="0" fill="#d6f77a" />
+<text x="32" y="115.28" font-size="42" fill="#f4f1e8" font-weight="700" data-max-width="536">Education &amp; honors</text>
+<path d="M32 151.64H568" fill="none" stroke="#353d32" />
+<text x="32" y="202.12" font-size="22" fill="#d6f77a" font-weight="700" data-max-width="536">EDUCATION</text>
+<text x="32" y="255.04" font-size="24" fill="#d6f77a" font-weight="700" data-max-width="536">2024–present</text>
+<text x="32" y="302.16" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="536">Seoul National University of</text>
+<text x="32" y="344.76" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="536">Science and Technology</text>
+<text x="32" y="393.68" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">B.S. in Computer Engineering · In</text>
+<text x="32" y="433.44" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">progress</text>
+<text x="32" y="503.84" font-size="24" fill="#d6f77a" font-weight="700" data-max-width="536">2021–2024</text>
+<text x="32" y="550.96" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="536">Busan Science High School</text>
+<path d="M32 596.36H568" fill="none" stroke="#353d32" />
+<text x="32" y="650.84" font-size="22" fill="#d6f77a" font-weight="700" data-max-width="536">HONORS</text>
+<text x="32" y="712.16" font-size="34" fill="#d6f77a" font-weight="700" data-max-width="536">2026</text>
+<rect x="32" y="756.88" width="6" height="6" rx="0" fill="#d6f77a" />
+<text x="56" y="769.40" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">Gold Prize · Korea Digital Contents</text>
+<text x="56" y="809.16" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">Society Undergraduate Paper</text>
+<text x="56" y="848.92" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">Competition (the paper above)</text>
+<text x="32" y="925.72" font-size="34" fill="#d6f77a" font-weight="700" data-max-width="536">2024</text>
+<rect x="32" y="970.4399999999999" width="6" height="6" rx="0" fill="#d6f77a" />
+<text x="56" y="982.96" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">12th K-Hackathon finalist</text>
+<rect x="32" y="1024.1999999999998" width="6" height="6" rx="0" fill="#d6f77a" />
+<text x="56" y="1036.72" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">MATLAB Student AI Contest</text>
+<text x="56" y="1076.48" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">finalist</text>
+<text x="32" y="1153.28" font-size="34" fill="#d6f77a" font-weight="700" data-max-width="536">2023</text>
+<rect x="32" y="1198.0" width="6" height="6" rx="0" fill="#d6f77a" />
+<text x="56" y="1210.52" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">Busan SW/AI Education Hackathon</text>
+<text x="56" y="1250.28" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">Grand Prize</text>
+<rect x="32" y="1291.52" width="6" height="6" rx="0" fill="#d6f77a" />
+<text x="56" y="1304.04" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">Busan Science Exhibition</text>
+<text x="56" y="1343.80" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">Encouragement Prize</text>
+<text x="32" y="1420.60" font-size="34" fill="#d6f77a" font-weight="700" data-max-width="536">2022</text>
+<rect x="32" y="1465.32" width="6" height="6" rx="0" fill="#d6f77a" />
+<text x="56" y="1477.84" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">Busan Future Scientist Award</text>
+<text x="56" y="1517.60" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">Grand Prize</text>
+<rect x="32" y="1558.84" width="6" height="6" rx="0" fill="#d6f77a" />
+<text x="56" y="1571.36" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">National High School Club SW/AI</text>
+<text x="56" y="1611.12" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">Contest Encouragement Prize</text>
+<rect x="32" y="1652.36" width="6" height="6" rx="0" fill="#d6f77a" />
+<text x="56" y="1664.88" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">Busan Science Exhibition</text>
+<text x="56" y="1704.64" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="512">Encouragement Prize</text></g>
+</g>
+<path d="M32 10897.0H568" stroke="#353d32"/>
+<g id="section-contact" role="group" aria-label="Let&#x27;s connect" transform="translate(0 10897.0)"><g xmlns="http://www.w3.org/2000/svg" font-family="Arial, Helvetica, Apple SD Gothic Neo, Noto Sans KR, sans-serif"><text x="32" y="51.96" font-size="19" fill="#d6f77a" font-weight="700">08 / YEONOH PARK</text>
+<rect x="558" y="40" width="10" height="10" rx="0" fill="#d6f77a" />
+<text x="32" y="115.28" font-size="42" fill="#f4f1e8" font-weight="700" data-max-width="536">Let's connect</text>
+<path d="M32 151.64H568" fill="none" stroke="#353d32" />
+<text x="32" y="208.84" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="536">Research collaboration &amp;</text>
+<text x="32" y="251.44" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="536">security inquiries</text>
+<text x="32" y="306.36" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">Email is the best way to reach me.</text>
+<text x="32" y="377.48" font-size="32" fill="#d6f77a" font-weight="700" data-max-width="536">24101209@seoultech.ac.kr</text>
+<path d="M32 420.03999999999996H568" fill="none" stroke="#353d32" />
+<text x="32" y="468.52" font-size="22" fill="#d6f77a" font-weight="700" data-max-width="536">LINKEDIN</text>
+<text x="32" y="523.12" font-size="26" fill="#f4f1e8" font-weight="400" data-max-width="536">linkedin.com/in/yeonohpark</text>
+<text x="32" y="580.68" font-size="22" fill="#d6f77a" font-weight="700" data-max-width="536">DISCORD</text>
+<text x="32" y="635.28" font-size="26" fill="#f4f1e8" font-weight="400" data-max-width="536">discord.com/users/495616210835079178</text>
+<text x="32" y="692.84" font-size="22" fill="#d6f77a" font-weight="700" data-max-width="536">INSTAGRAM</text>
+<text x="32" y="747.44" font-size="26" fill="#f4f1e8" font-weight="400" data-max-width="536">instagram.com/dus_oh24</text></g>
+</g>
+</g>
+<rect x=".5" y=".5" width="599" height="11715" rx="20" fill="none" stroke="#353d32"/>
+</svg>
