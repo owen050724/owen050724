@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="1459" viewBox="0 0 600 1459" role="img" aria-labelledby="title desc">
+<title id="title">About the researcher</title>
+<desc id="desc">I&#x27;m Yeonoh Park (박연오), a Computer Engineering undergraduate at Seoul National University of Science and Technology (SeoulTech) and an undergraduate researcher at the Cryptography Information Security Laboratory. I study how identity, authority, and trust move across software boundaries, and whether software enforces the security boundaries it is intended to provide. Interests: Vulnerability research; System security; Cryptography; Computer systems. Cryptography Information Security Laboratory: Undergraduate Researcher. TCP · Computer Science and Information Technology Club: Leader. STCE · SeoulTech Crypto Engine: Member.</desc>
+<rect x=".5" y=".5" width="599" height="1458" rx="20" fill="#151719" stroke="#353d32"/>
+<g font-family="Arial, Helvetica, Apple SD Gothic Neo, Noto Sans KR, sans-serif"><text x="32" y="51.96" font-size="19" fill="#d6f77a" font-weight="700">01 / YEONOH PARK</text>
+<rect x="558" y="40" width="10" height="10" rx="0" fill="#d6f77a"/>
+<text x="32" y="115.28" font-size="42" fill="#f4f1e8" font-weight="700" data-max-width="536">About the researcher</text>
+<path d="M32 151.64H568" fill="none" stroke="#353d32"/>
+<text x="32" y="207.16" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">I&#x27;m Yeonoh Park (박연오), a Computer</text>
+<text x="32" y="246.92" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">Engineering undergraduate at Seoul</text>
+<text x="32" y="286.68" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">National University of Science and</text>
+<text x="32" y="326.44" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">Technology (SeoulTech) and an</text>
+<text x="32" y="366.20" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">undergraduate researcher at the</text>
+<text x="32" y="405.96" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">Cryptography Information Security</text>
+<text x="32" y="445.72" font-size="28" fill="#f4f1e8" font-weight="400" data-max-width="536">Laboratory.</text>
+<text x="32" y="509.48" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">I study how identity, authority, and</text>
+<text x="32" y="549.24" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">trust move across software</text>
+<text x="32" y="589.00" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">boundaries, and whether software</text>
+<text x="32" y="628.76" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">enforces the security boundaries it</text>
+<text x="32" y="668.52" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">is intended to provide.</text>
+<text x="32" y="727.24" font-size="22" fill="#d6f77a" font-weight="700" data-max-width="536">RESEARCH INTERESTS</text>
+<rect x="32.0" y="759.9999999999999" width="260.0" height="94" rx="12" fill="#1b1f1d"/>
+<text x="50.0" y="801.00" font-size="25" fill="#d6f77a" font-weight="700" data-max-width="224.0">Vulnerability</text>
+<text x="50.0" y="836.50" font-size="25" fill="#d6f77a" font-weight="700" data-max-width="224.0">research</text>
+<rect x="308.0" y="759.9999999999999" width="260.0" height="94" rx="12" fill="#1b1f1d"/>
+<text x="326.0" y="801.00" font-size="25" fill="#d6f77a" font-weight="700" data-max-width="224.0">System security</text>
+<rect x="32.0" y="869.9999999999999" width="260.0" height="94" rx="12" fill="#1b1f1d"/>
+<text x="50.0" y="911.00" font-size="25" fill="#d6f77a" font-weight="700" data-max-width="224.0">Cryptography</text>
+<rect x="308.0" y="869.9999999999999" width="260.0" height="94" rx="12" fill="#1b1f1d"/>
+<text x="326.0" y="911.00" font-size="25" fill="#d6f77a" font-weight="700" data-max-width="224.0">Computer</text>
+<text x="326.0" y="946.50" font-size="25" fill="#d6f77a" font-weight="700" data-max-width="224.0">systems</text>
+<text x="32" y="1018.48" font-size="22" fill="#d6f77a" font-weight="700" data-max-width="536">COMMUNITY</text>
+<g transform="translate(32.0 1051.2399999999998)"><rect width="536.0" height="183.28" rx="12" fill="#1b1f1d" stroke="#353d32"/><text x="26" y="51.20" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="484.0">Leader</text><text x="26" y="103.28" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">TCP · Computer Science and</text><text x="26" y="141.62" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">Information Technology Club</text></g>
+<g transform="translate(32.0 1258.5199999999998)"><rect width="536.0" height="144.94" rx="12" fill="#1b1f1d" stroke="#353d32"/><text x="26" y="51.20" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="484.0">Member</text><text x="26" y="103.28" font-size="27" fill="#b9c0b2" font-weight="400" data-max-width="484.0">STCE · SeoulTech Crypto Engine</text></g></g>
+</svg>

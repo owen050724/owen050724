@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1259" viewBox="0 0 1200 1259" role="img" aria-labelledby="title desc">
+<title id="title">Publication</title>
+<desc id="desc">Gold Prize. Analysis of Privilege Transfer Vulnerabilities in Messenger-Based Local AI Agents. 메신저 기반 로컬 AI 에이전트의 권한 전이 취약점 분석. This work examines privilege transfer and authorization boundaries in messenger-based local AI agents. Authors: 박연오 · 최도현 · 김역 · 이창훈 · 손기욱†. 2026 Summer Conference of the Korea Digital Contents Society. Undergraduate Paper Competition. July 1–3, 2026. Conference proceedings and program book.</desc>
+<rect x=".5" y=".5" width="1199" height="1258" rx="20" fill="#151719" stroke="#353d32"/>
+<g font-family="Arial, Helvetica, Apple SD Gothic Neo, Noto Sans KR, sans-serif"><text x="60" y="51.96" font-size="19" fill="#e7be76" font-weight="700">06 / YEONOH PARK</text>
+<rect x="1130" y="40" width="10" height="10" rx="0" fill="#e7be76"/>
+<text x="60" y="120.32" font-size="48" fill="#f4f1e8" font-weight="700" data-max-width="1080">Publication</text>
+<path d="M60 160.16H1140" fill="none" stroke="#353d32"/>
+<text x="60" y="257.68" font-size="78" fill="#e7be76" font-weight="700" data-max-width="1080">GOLD PRIZE</text>
+<text x="60" y="355.88" font-size="44" fill="#f4f1e8" font-weight="700" data-max-width="1080">Analysis of Privilege Transfer Vulnerabilities</text>
+<text x="60" y="418.36" font-size="44" fill="#f4f1e8" font-weight="700" data-max-width="1080">in Messenger-Based Local AI Agents</text>
+<text x="60" y="489.72" font-size="26" fill="#b9c0b2" font-weight="400" data-max-width="1080">메신저 기반 로컬 AI 에이전트의 권한 전이 취약점 분석</text>
+<text x="60" y="556.64" font-size="26" fill="#b9c0b2" font-weight="400" data-max-width="1080">This work examines privilege transfer and authorization boundaries in</text>
+<text x="60" y="593.56" font-size="26" fill="#b9c0b2" font-weight="400" data-max-width="1080">messenger-based local AI agents.</text>
+<path d="M60 632.6399999999999H1140" fill="none" stroke="#353d32"/>
+<text x="60" y="681.12" font-size="22" fill="#e7be76" font-weight="700" data-max-width="1080">AUTHORS</text>
+<text x="60" y="735.72" font-size="26" fill="#f4f1e8" font-weight="400" data-max-width="1080">박연오 · 최도현 · 김역 · 이창훈 · 손기욱†</text>
+<text x="60" y="799.28" font-size="22" fill="#e7be76" font-weight="700" data-max-width="1080">VENUE</text>
+<text x="60" y="853.88" font-size="26" fill="#f4f1e8" font-weight="400" data-max-width="1080">2026 Summer Conference of the Korea Digital Contents Society</text>
+<text x="60" y="917.44" font-size="22" fill="#e7be76" font-weight="700" data-max-width="1080">COMPETITION</text>
+<text x="60" y="972.04" font-size="26" fill="#f4f1e8" font-weight="400" data-max-width="1080">Undergraduate Paper Competition</text>
+<text x="60" y="1035.60" font-size="22" fill="#e7be76" font-weight="700" data-max-width="1080">CONFERENCE DATES</text>
+<text x="60" y="1090.20" font-size="26" fill="#f4f1e8" font-weight="400" data-max-width="1080">July 1–3, 2026</text>
+<path d="M60 1135.2799999999997H1140" fill="none" stroke="#353d32"/>
+<text x="60" y="1184.28" font-size="25" fill="#e7be76" font-weight="700" data-max-width="1080">Conference proceedings &amp; program book ↗</text></g>
+</svg>

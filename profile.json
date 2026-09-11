@@ -1,0 +1,225 @@
+{
+  "name": "Yeonoh Park",
+  "korean_name": "박연오",
+  "about": {
+    "title": "About the researcher",
+    "intro": "I'm Yeonoh Park (박연오), a Computer Engineering undergraduate at Seoul National University of Science and Technology (SeoulTech) and an undergraduate researcher at the Cryptography Information Security Laboratory.",
+    "focus": "I study how identity, authority, and trust move across software boundaries, and whether software enforces the security boundaries it is intended to provide.",
+    "interests": [
+      "Vulnerability research",
+      "System security",
+      "Cryptography",
+      "Computer systems"
+    ],
+    "roles": [
+      {
+        "label": "Cryptography Information Security Laboratory",
+        "detail": "Undergraduate Researcher"
+      },
+      {
+        "label": "TCP · Computer Science and Information Technology Club",
+        "detail": "Leader"
+      },
+      {
+        "label": "STCE · SeoulTech Crypto Engine",
+        "detail": "Member"
+      }
+    ]
+  },
+  "research": {
+    "title": "Research in numbers",
+    "scope": "Authorization boundaries, tenant isolation, credential handling, workflow execution, plugins, and APIs across open-source projects and coordinated disclosure programs.",
+    "metrics": [
+      {
+        "value": "5",
+        "label": "CVE identifiers",
+        "note": "2 published · 3 reserved"
+      },
+      {
+        "value": "13",
+        "label": "Vendor-confirmed",
+        "note": "outcomes"
+      },
+      {
+        "value": "92",
+        "label": "Submitted reports",
+        "note": "Mar 22–Aug 13, 2026"
+      },
+      {
+        "value": "40",
+        "label": "Products / workspaces",
+        "note": "research coverage"
+      }
+    ],
+    "note": "The 92 reports were submitted from March 22 to August 13, 2026. The 13 vendor-confirmed outcomes include subsequent confirmations and publications."
+  },
+  "method": {
+    "title": "How I work",
+    "steps": [
+      {
+        "label": "Model the boundary",
+        "detail": "Identify the identities, capabilities, data domains, and trust transitions that define a system's expected security properties."
+      },
+      {
+        "label": "Follow authority",
+        "detail": "Trace how identity and scope propagate between components, looking for changes in how authority is interpreted."
+      },
+      {
+        "label": "Check the evidence",
+        "detail": "Use bounded local validation and competing explanations to distinguish a boundary failure from expected behavior."
+      },
+      {
+        "label": "Coordinate disclosure",
+        "detail": "Separate technical impact from reportability, account for prior work, document limitations, and work with vendors on disclosure."
+      }
+    ]
+  },
+  "published": {
+    "title": "Published findings",
+    "items": [
+      {
+        "project": "Jenkins",
+        "ids": [
+          "CVE-2026-84677"
+        ],
+        "status": "PUBLISHED",
+        "description": "Stored XSS in update-center2, affecting 3.18.3 and earlier and fixed in 3.18.4.",
+        "note": "Published September 2, 2026 · Reporter credit",
+        "link": "https://www.jenkins.io/security/advisory/2026-09-02/"
+      },
+      {
+        "project": "ToolJet",
+        "ids": [
+          "CVE-2026-82872"
+        ],
+        "status": "PUBLISHED",
+        "description": "A vendor-accepted authorization boundary vulnerability.",
+        "note": "Advisory: August 7, 2026 · CVE: August 31, 2026 · Finder credit",
+        "link": "https://nvd.nist.gov/vuln/detail/cve-2026-82872"
+      }
+    ]
+  },
+  "coordinated": {
+    "title": "Coordinated outcomes",
+    "items": [
+      {
+        "project": "Dify",
+        "ids": [
+          "CVE-2026-59210"
+        ],
+        "status": "RESERVED",
+        "description": "Accepted; fix shipped since 1.16.0. CVE reserved; advisory publication pending."
+      },
+      {
+        "project": "Apache DolphinScheduler",
+        "ids": [
+          "CVE-2026-57590",
+          "CVE-2026-66082"
+        ],
+        "status": "RESERVED",
+        "description": "Two separately vendor-confirmed findings with reporter credit. Both CVEs are reserved; severity, remediation, and advisory details remain pending."
+      },
+      {
+        "project": "Grafana",
+        "ids": [],
+        "status": "ACCEPTED",
+        "description": "CVE, remediation, and advisory coordination pending."
+      },
+      {
+        "project": "ToolJet · separate report",
+        "ids": [],
+        "status": "ACCEPTED",
+        "description": "Accepted with reporter credit; CVE assignment, remediation, and advisory publication pending."
+      },
+      {
+        "project": "authentik",
+        "ids": [],
+        "status": "VALIDATED",
+        "description": "Fix verification, CVE assignment, advisory publication, and public attribution pending."
+      },
+      {
+        "project": "Five additional outcomes",
+        "ids": [],
+        "status": "COORDINATED",
+        "description": "Accepted or otherwise confirmed by their vendors. Product identities and technical details remain private during coordinated disclosure."
+      }
+    ]
+  },
+  "publication": {
+    "title": "Publication",
+    "paper": "Analysis of Privilege Transfer Vulnerabilities in Messenger-Based Local AI Agents",
+    "korean": "메신저 기반 로컬 AI 에이전트의 권한 전이 취약점 분석",
+    "summary": "This work examines privilege transfer and authorization boundaries in messenger-based local AI agents.",
+    "authors": "박연오 · 최도현 · 김역 · 이창훈 · 손기욱†",
+    "venue": "2026 Summer Conference of the Korea Digital Contents Society",
+    "competition": "Undergraduate Paper Competition",
+    "date": "July 1–3, 2026",
+    "award": "Gold Prize",
+    "link": "https://dcs.or.kr/conference/summer2026/notice/article/1086"
+  },
+  "background": {
+    "title": "Education & honors",
+    "education": [
+      {
+        "period": "2024–present",
+        "school": "Seoul National University of Science and Technology",
+        "detail": "B.S. in Computer Engineering · In progress"
+      },
+      {
+        "period": "2021–2024",
+        "school": "Busan Science High School",
+        "detail": ""
+      }
+    ],
+    "honors": [
+      {
+        "year": "2026",
+        "items": [
+          "Gold Prize · Korea Digital Contents Society Undergraduate Paper Competition (the paper above)"
+        ]
+      },
+      {
+        "year": "2024",
+        "items": [
+          "12th K-Hackathon finalist",
+          "MATLAB Student AI Contest finalist"
+        ]
+      },
+      {
+        "year": "2023",
+        "items": [
+          "Busan SW/AI Education Hackathon Grand Prize",
+          "Busan Science Exhibition Encouragement Prize"
+        ]
+      },
+      {
+        "year": "2022",
+        "items": [
+          "Busan Future Scientist Award Grand Prize",
+          "National High School Club SW/AI Contest Encouragement Prize",
+          "Busan Science Exhibition Encouragement Prize"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's connect",
+    "purpose": "Research collaboration & security inquiries",
+    "note": "Email is the best way to reach me.",
+    "email": "24101209@seoultech.ac.kr",
+    "social": [
+      {
+        "label": "LinkedIn",
+        "url": "https://www.linkedin.com/in/yeonohpark/"
+      },
+      {
+        "label": "Discord",
+        "url": "https://discord.com/users/495616210835079178"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/dus_oh24/"
+      }
+    ]
+  }
+}

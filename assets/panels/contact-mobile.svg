@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="485" viewBox="0 0 600 485" role="img" aria-labelledby="title desc">
+<title id="title">Let&#x27;s connect</title>
+<desc id="desc">Research collaboration &amp; security inquiries. Email is the best way to reach me. 24101209@seoultech.ac.kr</desc>
+<rect x=".5" y=".5" width="599" height="484" rx="20" fill="#151719" stroke="#353d32"/>
+<g font-family="Arial, Helvetica, Apple SD Gothic Neo, Noto Sans KR, sans-serif"><text x="32" y="51.96" font-size="19" fill="#d6f77a" font-weight="700">08 / YEONOH PARK</text>
+<rect x="558" y="40" width="10" height="10" rx="0" fill="#d6f77a"/>
+<text x="32" y="115.28" font-size="42" fill="#f4f1e8" font-weight="700" data-max-width="536">Let&#x27;s connect</text>
+<path d="M32 151.64H568" fill="none" stroke="#353d32"/>
+<text x="32" y="208.84" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="536">Research collaboration &amp;</text>
+<text x="32" y="251.44" font-size="30" fill="#f4f1e8" font-weight="700" data-max-width="536">security inquiries</text>
+<text x="32" y="306.36" font-size="28" fill="#b9c0b2" font-weight="400" data-max-width="536">Email is the best way to reach me.</text>
+<text x="32" y="377.48" font-size="32" fill="#d6f77a" font-weight="700" data-max-width="536">24101209@seoultech.ac.kr</text>
+<text x="32" y="439.36" font-size="23" fill="#d6f77a" font-weight="700" data-max-width="536">EMAIL ME ↗</text></g>
+</svg>
